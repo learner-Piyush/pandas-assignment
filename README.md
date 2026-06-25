@@ -42,11 +42,29 @@ pandas-assignment/
    ```
 
 2. **Create the Conda environment:**
+
+   **Option 1: Local environment (Recommended)** ⭐
+   
+   Create the environment in a local `./env` directory within your project:
+   ```bash
+   conda env create -f environment.yml --prefix ./env
+   ```
+   
+   **Option 2: Named environment (System-wide)**
+   
+   Create the environment in Conda's default directory:
    ```bash
    conda env create -f environment.yml
    ```
 
 3. **Activate the environment:**
+
+   **For Option 1 (local):**
+   ```bash
+   conda activate ./env
+   ```
+   
+   **For Option 2 (named):**
    ```bash
    conda activate pandas-assignment
    ```
@@ -57,6 +75,20 @@ pandas-assignment/
    ```
 
 5. **Open `pandas-practice.ipynb` in your browser and start exploring!**
+
+### Deactivating the Environment
+
+When you're done, deactivate the environment with:
+```bash
+conda deactivate
+```
+
+### Cleaning Up (Local Environment Only)
+
+If you created the environment with `--prefix ./env`, you can remove it by simply deleting the folder:
+```bash
+rm -rf ./env
+```
 
 ## 📚 Contents
 
@@ -131,6 +163,7 @@ For questions or feedback, please contact [learner-Piyush](https://github.com/le
 - [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 - [Real Python Pandas Tutorials](https://realpython.com/learning-paths/pandas-data-science/)
 - [DataCamp Pandas Courses](https://www.datacamp.com/courses/data-manipulation-with-pandas)
+- [Conda Environment Management](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ---
 
